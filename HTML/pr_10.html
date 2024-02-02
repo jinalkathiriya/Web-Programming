@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete HTML Form</title>
+</head>
+<body>
+
+  <form action="/submit" method="post">
+
+    <!-- Text Input -->
+    <label for="text-input">Text Input:</label>
+    <input type="text" id="text-input" name="text-input" placeholder="Enter text" required>
+
+    <br>
+
+    <!-- Password Input -->
+    <label for="password-input">Password:</label>
+    <input type="password" id="password-input" name="password-input" placeholder="Enter password" required>
+
+    <br>
+
+    <!-- Email Input -->
+    <label for="email-input">Email:</label>
+    <input type="email" id="email-input" name="email-input" placeholder="Enter email" required>
+
+    <br>
+
+    <!-- Number Input -->
+    <label for="number-input">Number:</label>
+    <input type="number" id="number-input" name="number-input" placeholder="Enter number" required>
+
+    <br>
+
+    <!-- Date Input -->
+    <label for="date-input">Date:</label>
+    <input type="date" id="date-input" name="date-input" required>
+
+    <br>
+
+    <!-- Checkbox -->
+    <input type="checkbox" id="checkbox-input" name="checkbox-input">
+    <label for="checkbox-input">Checkbox</label>
+
+    <br>
+
+    <!-- Radio Buttons -->
+    <input type="radio" id="radio1" name="radio-group" value="option1">
+    <label for="radio1">Option 1</label>
+
+    <input type="radio" id="radio2" name="radio-group" value="option2">
+    <label for="radio2">Option 2</label>
+
+    <br>
+
+    <!-- Textarea -->
+    <label for="textarea-input">Textarea:</label>
+    <textarea id="textarea-input" name="textarea-input" rows="4" cols="50" placeholder="Enter text"></textarea>
+
+    <br>
+
+    <!-- Select Dropdown -->
+    <label for="select-input">Select:</label>
+    <select id="select-input" name="select-input">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+
+    <br>
+
+    <!-- File Input -->
+    <label for="file-input">File:</label>
+    <input type="file" id="file-input" name="file-input">
+
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
