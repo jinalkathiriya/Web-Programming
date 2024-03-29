@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    background-color: wheat;
+    text-align: center;
+}
+
+div {
+    background-color: #646262;
+    width: 500px;
+    height: 600px;
+    border: 2px solid blueviolet;
+    border-radius: 20PX;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="username"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+input[type="reset"],
+input[type="submit"],
+input[type="checkbox"] {
+    border: 2px solid #d7ff27;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
