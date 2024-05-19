@@ -1,0 +1,42 @@
+<!-- Create simple application that will do following
+Declare And assign variable
+Operators and expression in JavaScript
+Looping in JavaScript
+Declare an Array
+User defined functions in Javascript
+Built in functions in Javascript
+Dialog boxes. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Basics</title>
+</head>
+
+<body>
+    <h1>JavaScript Basics Example</h1>
+    <script>
+        let x = 5;
+        document.write("x is " + x + "<br>");
+        let y = x + 10;
+        document.write("y is " + y + "<br>");
+        document.write("Looping:<br>");
+        for (let i = 0; i < 5; i++) {
+            document.write("Iteration " + i + "<br>");
+        }
+        let myArray = [1, 2, 3, 4, 5];
+        document.write("Array: " + myArray + "<br>");
+        function multiply(a, b) {
+            return a * b;
+        }
+        let result = multiply(3, 4);
+        document.write("Result of multiplication: " + result + "<br>");
+        let arrayLength = myArray.length;
+        document.write("Array length: " + arrayLength + "<br>");
+        let userInput = prompt("Enter your name:");
+        alert("Hello, " + userInput + "!");
+    </script>
+</body>
+
+</html>

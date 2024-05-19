@@ -1,0 +1,47 @@
+<!-- write a java script program that uses function that calculates how many days
+left to your birthday. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+</head>
+
+<body>
+    <h1>Birthday Countdown</h1>
+    <p>Enter your birth date:</p>
+    <input type="date" id="birthdate">
+    <button onclick="calculateDays()">Calculate</button>
+    <p id="result"></p>
+    <script>
+        function daysUntilBirthday(birthDate) {
+            var today = new Date();
+            var currentYear = today.getFullYear();
+            var nextBirthday = new Date(birthDate);
+            nextBirthday.setFullYear(currentYear);
+            if (nextBirthday < today) {
+                nextBirthday.setFullYear(currentYear + 1);
+            }
+            var difference = nextBirthday.getTime() - today.getTime();
+            var days = Math.ceil(difference / (1000 * 60 * 60 * 24));
+            return days;
+        }
+        function calculateDays() {
+            var birthDateInput = document.getElementById("birthdate").value;
+            var daysLeft = daysUntilBirthday(birthDateInput);
+            var resultElement = document.getElementById("result");
+            if (daysLeft === 0) {
+                resultElement.textContent = "Happy Birthday!";
+            } else if (daysLeft === 1) {
+                resultElement.textContent = "Your birthday is tomorrow!";
+            } else {
+                resultElement.textContent = "There are " + daysLeft + " days left until your birthday!";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!-- Create a page that includes a select object to change the background
+color of the current page. The property that needs to be set is bgColor,
+Similar things for foreground color. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Changer</title>
+</head>
+
+<body>
+    <h1>Color Changer</h1>
+
+    <label for="bgColorSelect">Select Background Color:</label>
+    <select id="bgColorSelect" onchange="changeColor('bgColorSelect', 'backgroundColor')">
+        <option value="white">White</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+    </select>
+    <label for="fgColorSelect">Select Foreground Color:</label>
+    <select id="fgColorSelect" onchange="changeColor('fgColorSelect', 'color')">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+    </select>
+    <script>
+        function changeColor(selectId, property) {
+            var color = document.getElementById(selectId).value;
+            document.body.style[property] = color;
+        }
+    </script>
+</body>
+
+</html>
